@@ -1,0 +1,334 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300&display=swap");
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/Bebas_Neue_Thin/BebasNeue-Thin.eot");
+  src: url("../fonts/BebasNeue-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Bebas_Neue_Thin/BebasNeue-Thin.woff2") format("woff2"), url("../fonts/Bebas_Neue_Thin/BebasNeue-Thin.woff") format("woff"), url("../fonts/Bebas_Neue_Thin/BebasNeue-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/Bebas_Neue_Bold/BebasNeueBold.eot");
+  src: url("../fonts/Bebas_Neue_Bold/BebasNeueBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Bebas_Neue_Bold/BebasNeueBold.woff2") format("woff2"), url("../fonts/Bebas_Neue_Bold/BebasNeueBold.woff") format("woff"), url("../fonts/Bebas_Neue_Bold/BebasNeueBold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("../fonts/Bebas_Neue_Light/BebasNeue-Light.eot");
+  src: url("../fonts/Bebas_Neue_Light/BebasNeue-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Bebas_Neue_Light/BebasNeue-Light.woff2") format("woff2"), url("../fonts/Bebas_Neue_Light/BebasNeue-Light.woff") format("woff"), url("../fonts/Bebas_Neue_Light/BebasNeue-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  background: #9789f9;
+  font-family: "Roboto", sans-serif;
+  color: #181818;
+}
+
+.wrapper {
+  padding: 17vh 12.3%;
+}
+@media (max-width: 1200px) {
+  .wrapper {
+    padding: 10vh 8%;
+  }
+}
+@media (max-width: 768px) {
+  .wrapper {
+    padding: 5vh 2%;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 480px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+.card {
+  background: #f5f4f9;
+  box-shadow: 2px 4px 59px #7a6be7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+@media (max-width: 480px) {
+  .card {
+    margin-bottom: 40px;
+  }
+}
+.card_small {
+  flex: 0 0 30.704%;
+  min-height: 43.21vw;
+  padding-top: 3.66%;
+}
+@media (max-width: 768px) {
+  .card_small {
+    padding-top: 1.5%;
+  }
+}
+@media (max-width: 480px) {
+  .card_small {
+    width: 85%;
+    padding-top: 15px;
+  }
+}
+.card_big {
+  flex: 0 0 34.742%;
+  height: 48.868vw;
+  padding-top: 4.6%;
+}
+@media (max-width: 768px) {
+  .card_big {
+    padding-top: 2%;
+  }
+}
+@media (max-width: 480px) {
+  .card_big {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .card_big {
+    padding-top: 20px;
+  }
+}
+.card__head {
+  font-family: "Bebas Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 25px;
+}
+@media (max-width: 980px) {
+  .card__head {
+    margin-bottom: 10px;
+  }
+}
+.card__body {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  border-top-right-radius: 50%;
+  border-top-left-radius: 50%;
+  width: 100%;
+  padding-top: 35px;
+  position: inherit;
+}
+@media (max-width: 1200px) {
+  .card__body {
+    padding-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .card__body {
+    padding-top: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .card__body {
+    padding-bottom: 30px;
+  }
+}
+.card__price {
+  font-weight: 100;
+  font-size: 60px;
+  line-height: 45px;
+  word-spacing: -10px;
+  display: flex;
+  margin-bottom: 20px;
+}
+@media (max-width: 1200px) {
+  .card__price {
+    margin-bottom: 10px;
+    font-size: 40px;
+    line-height: 32px;
+  }
+}
+@media (max-width: 768px) {
+  .card__price {
+    font-size: 30px;
+    line-height: 25px;
+    margin-bottom: 4px;
+  }
+}
+@media (max-width: 480px) {
+  .card__price {
+    font-size: 40px;
+    line-height: 32px;
+  }
+}
+.card__price .valute {
+  font-size: 24px;
+  align-self: flex-start;
+  line-height: 24px;
+}
+.card__price .units {
+  align-self: flex-end;
+  font-size: 16px;
+  line-height: 16px;
+}
+.card__price .number {
+  padding: 0;
+}
+.card__title {
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (max-width: 980px) {
+  .card__title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .card__title {
+    font-size: 16px;
+  }
+}
+.card__icon {
+  font-size: 30px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1200px) {
+  .card__icon {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 980px) {
+  .card__icon {
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .card__icon {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 520px) {
+  .card__icon {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .card__icon {
+    display: block;
+    font-size: 24px;
+  }
+}
+.card__discount {
+  font-size: 11px;
+  font-weight: 300;
+  color: #a9a9a9;
+  margin-top: -4px;
+  margin-bottom: 25px;
+}
+@media (max-width: 980px) {
+  .card__discount {
+    margin-top: -10px;
+    margin-bottom: 16px;
+    font-size: 9px;
+  }
+}
+.card__footer {
+  min-height: 9.82%;
+  text-align: center;
+}
+
+.text {
+  font-size: 16px;
+  font-weight: 300;
+}
+@media (max-width: 980px) {
+  .text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .text {
+    font-size: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .text {
+    font-size: 14px;
+  }
+}
+.text__item {
+  margin-bottom: 32px;
+}
+@media (max-width: 1200px) {
+  .text__item {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 980px) {
+  .text__item {
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .text__item {
+    margin-bottom: 8px;
+  }
+}
+
+.btn {
+  font-family: "Bebas Neue", sans-serif;
+  height: 54px;
+  font-size: 18px;
+  border-radius: 27px;
+  box-shadow: 2px 4px 18px rgba(253, 141, 123, 0.31);
+}
+@media (max-width: 980px) {
+  .btn {
+    height: 40px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .btn {
+    height: 30px;
+    font-size: 14px;
+  }
+}
+.btn_s {
+  background: #6fcffb;
+  transform: translate(0, 50%);
+}
+.btn_l {
+  background: #fd8d7b;
+  transform: translate(0, -50%);
+}
+.btn a {
+  line-height: 54px;
+  color: #ffffff;
+  padding: 0 47px;
+}
+@media (max-width: 980px) {
+  .btn a {
+    line-height: 40px;
+    padding: 0 30px;
+  }
+}
+@media (max-width: 768px) {
+  .btn a {
+    padding: 0 10px;
+    line-height: 30px;
+  }
+}/*# sourceMappingURL=main.css.map */
